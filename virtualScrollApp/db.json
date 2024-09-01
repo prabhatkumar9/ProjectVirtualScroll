@@ -1,0 +1,190 @@
+{
+  "groceries": {
+    "page_number": 1,
+    "page_size": 20,
+    "success": true,
+    "message": "data load success",
+    "data": [
+      {
+        "id": 1,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 2,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 3,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 4,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 5,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 6,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 7,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 8,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 9,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 10,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 11,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 12,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 13,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 14,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 15,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 16,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 17,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 18,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 19,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 20,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 21,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 22,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 23,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 24,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 25,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 26,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 27,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 28,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 29,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 30,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 31,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 32,
+        "name": "doritos",
+        "type": "snacks"
+      },
+      {
+        "id": 33,
+        "name": "Milk",
+        "type": "fruit"
+      },
+      {
+        "id": 34,
+        "name": "Banana",
+        "type": "fruit"
+      },
+      {
+        "id": 35,
+        "name": "lays chips",
+        "type": "snacks"
+      },
+      {
+        "id": 36,
+        "name": "doritos",
+        "type": "snacks"
+      }
+    ]
+  }
+}

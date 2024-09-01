@@ -1,0 +1,87 @@
+/* Base styles */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.app-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.app-container .logo {
+    background-image: url("../images/nf_logo.webp");
+    min-height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+
+.components-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+app-movie,
+app-bucket {
+    flex: 1 1 45%;
+    /* Flex grow, shrink, and basis to make the items flexible */
+
+    min-width: 300px;
+    /* Ensures a minimum width for each component */
+
+    margin: 10px;
+    /* Adds some spacing between the items */
+}
+
+app-movie {
+    background-color: #fee9e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+app-bucket {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for 720p and above (1280px and wider screens) */
+@media (min-width: 769px) and (max-width: 1920px) {
+    .components-container {
+        flex-direction: row;
+        /* Ensure the components are side by side */
+    }
+
+    app-movie,
+    app-bucket {
+        flex: 1 1 48%;
+        /* Make each take up 48% of the container */
+        max-width: 48%;
+        /* Ensure the max width is also 48% */
+        margin: 10px;
+        /* Add some spacing between the items */
+    }
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (min-width: 100px) and (max-width: 768px) {
+    .components-container {
+        flex-direction: column;
+    }
+
+    app-movie,
+    app-bucket {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+

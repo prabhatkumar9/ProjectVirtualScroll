@@ -1,0 +1,17 @@
+<div class="bucket-container">
+  <h1>Watchlist</h1>
+
+  <cdk-virtual-scroll-viewport itemSize="40" class="bucket-viewport" aria-live="polite">
+    <ul class="bucket-list">
+      @for(item of myBucket$ | async; track item.id) {
+      <li class="bucket-item" role="listitem" [attr.aria-label]="item.name + ', quantity: ' + item?.name">
+        {{item?.name}} - IMBD : {{item.imdb}}
+        <span class="decrement-button" (click)="decrement(item)"
+          [attr.aria-label]="'Decrease quantity of ' + item.name">-</span>
+      </li>
+      }@empty {
+      <li class="bucket-item" role="listitem" aria-live="assertive">Empty Bucket...</li>
+      }
+    </ul>
+  </cdk-virtual-scroll-viewport>
+</div>

@@ -1,0 +1,55 @@
+<div class="container">
+  <h1>Movies</h1>
+  <select (change)="onTypeChange($event)" class="type-select" aria-label="Filter movies by type">
+
+    @for( gen of genreList; track gen ){
+    @if (gen == null) {
+    <option value="">All Movies</option>
+    }@else {
+    <option [value]="gen">{{gen}}</option>
+    }
+    }
+  </select>
+
+  <cdk-virtual-scroll-viewport #cdkViewPort itemSize="40" class="viewport" (scroll)="onScroll($event)" aria-live="polite">
+
+    <ul class="movie-list">
+      @for(groc of (filteredMovies$ | async) ?? movies; track groc._id) {
+
+      <li class="movie-item" role="listitem">
+        <span class="increment-button" (click)="increment(groc)"
+          [attr.aria-label]="'Increase quantity of ' + groc.title">+</span>
+
+        {{ groc.title }}
+
+        <!-- <span class="decrement-button" (click)="decrement(groc)"
+          [attr.aria-label]="'Decrease quantity of ' + groc.title">-</span> -->
+           <span>Imdb : {{groc?.imdb?.rating}}</span>
+      </li>
+
+      }@empty {
+
+      <li class="loadtext">
+        <h4>No Movies found...</h4>
+      </li>
+      }
+
+      @if (isLoading) {
+      <li>
+        <app-loader></app-loader>
+      </li>
+      <li class="loadtext">
+        <h4>Loading...</h4>
+      </li>
+      }
+
+      @if (message) {
+      <li style="color: #950000;">
+        <h4> {{message}}...</h4>
+      </li>
+      }
+    </ul>
+
+  </cdk-virtual-scroll-viewport>
+
+</div>

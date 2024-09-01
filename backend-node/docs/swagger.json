@@ -1,0 +1,113 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2.0.0",
+    "title": "CloudAgent Apis",
+    "description": "API for Managing queue calls",
+    "contact": {
+      "name": "API Support",
+      "email": "prabhatvisvakrma9@gmail.com"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Queue CRUD",
+      "description": "Queue related apis"
+    },
+    {
+      "name": "Health",
+      "description": "Health Check"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "securityDefinitions": {},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/check": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "helathResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": ""
+        },
+        "message": {
+          "type": "string",
+          "example": ""
+        }
+      }
+    },
+    "errorResponse.400": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": ""
+        },
+        "message": {
+          "type": "string",
+          "example": ""
+        }
+      }
+    },
+    "errorResponse.403": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": ""
+        },
+        "message": {
+          "type": "string",
+          "example": ""
+        }
+      }
+    },
+    "errorResponse.404": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": "404"
+        },
+        "message": {
+          "type": "string",
+          "example": "Not found"
+        }
+      }
+    },
+    "errorResponse.500": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": ""
+        },
+        "message": {
+          "type": "string",
+          "example": ""
+        }
+      }
+    }
+  }
+}

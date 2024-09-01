@@ -1,0 +1,132 @@
+.viewport {
+    height: 45vh;
+    /* Use viewport height for responsiveness */
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.viewport::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar in WebKit browsers */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.type-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.movie-item:hover {
+    transform: scale(0.97);
+    background-color: #f1f1f1;
+    font-size: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Slightly larger on hover */
+}
+
+.increment-button {
+    display: inline-block;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transform: scale(1);
+    /* Magnify buttons slightly on hover */
+    transition: transform 0.3s ease;
+}
+
+.decrement-button {
+    display: inline-block;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #ff3300;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transform: scale(1);
+    /* Magnify buttons slightly on hover */
+    transition: transform 0.3s ease;
+}
+
+.increment-button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.decrement-button:hover {
+    background-color: #950000;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+    user-select: none;
+}
+
+.movie-item:hover .increment-button,
+.movie-item:hover .decrement-button {
+    transform: scale(1.1);
+    /* Magnify buttons slightly on hover */
+    transition: transform 0.3s ease;
+}
+
+
+
+.loadtext {
+    align-items: center;
+    text-align: center;
+    color: #2196f3;
+}
